@@ -11,6 +11,7 @@
       "left-menu  main-menu" 1fr /
       300px 1fr;
   }
+  /* Header */
   header {
     grid-area: header;
     padding: 10px;
@@ -82,7 +83,7 @@
   .fa-solid {
     font-size: 25px;
   }
-  
+  /* Left Menu */
   .left-menu {
     grid-area: left-menu;
     display: grid;
@@ -180,7 +181,7 @@
     justify-content: start;
     gap: 20px;
   }
-  
+  /* Main Menu */
   .main-menu {
     grid-area: main-menu;
     border-top: 1px solid #f0f0f0;
@@ -189,6 +190,7 @@
       "main-menu__header" auto
       "main-menu__main__part" 1fr;
   }
+  /* Main Header */
   .main-menu__header {
     border-bottom: 1px solid #f0f0f0;
     display: grid;
