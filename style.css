@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    display: grid;
+    grid-template:
+      "header    header" auto
+      "left-menu  main-menu" 1fr /
+      300px 1fr;
+  }
+  header {
+    grid-area: header;
+    padding: 10px;
+    display: grid;
+    grid-auto-flow: column;
+  }
+  .header-menu__logo a{
+      text-decoration: solid;
+      color: black;
+  }
+  .header-left__menu {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
+    padding-left: 10px;
+  }
+  header .material-symbols-outlined {
+    font-size: 28px;
+  }
+  .header-search__bar input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid gray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+  }
+  .header-search__bar {
+    display: grid;
+    grid-auto-flow: column;
+    width: 140%;
+  }
+  .header-search__bar button {
+    width: 30%;
+    display: grid;
+    place-items: center;
+    border: 1px solid gray;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .header-middle__menu {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    align-items: center;
+  }
+  .header-right__menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    justify-content: end;
+    align-items: center;
+    padding-right: 10px;
+  }
+  .header-form {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 5px;
+    color: royalblue;
+    font-family: sans-serif;
+    border: 2px solid royalblue;
+    padding: 10px;
+  }
+  .fa-solid {
+    font-size: 25px;
+  }
+  
+  .left-menu {
+    grid-area: left-menu;
+    display: grid;
+    grid-template:
+      "left-menu__first__row" 150px
+      "left-menu__second__row" 100px
+      "left-menu__third__row" 150px
+      "left-menu__fourth__row" 1fr;
+  }
+  .left-menu__first__row {
+    grid-area: left-menu__first__row;
+    display: grid;
+    border-bottom: 1px solid grey;
+  }
+  .left-menu__first__row__home {
+    display: grid;
+    grid-auto-flow: column;
+    padding-left: 20px;
+    align-items: center;
+    gap: 30px;
+    justify-content: start;
+  }
+  .left-menu__first__row__explore {
+    display: grid;
+    grid-auto-flow: column;
+    padding-left: 20px;
+    align-items: center;
+    gap: 30px;
+    justify-content: start;
+  }
+  .left-menu__first__row__subscription {
+    display: grid;
+    grid-auto-flow: column;
+    padding-left: 20px;
+    align-items: center;
+    gap: 30px;
+    justify-content: start;
+    margin-bottom: 10px;
+  }
+  
+  .left-menu__second__row {
+    grid-area: left-menu__second__row;
+    border-bottom: 1px solid grey;
+    display: grid;
+  }
+  .left-menu__second__row__library {
+    display: grid;
+    grid-auto-flow: column;
+    padding-left: 20px;
+    align-items: center;
+    gap: 30px;
+    justify-content: start;
+  }
+  .left-menu__second__row__history {
+    display: grid;
+    grid-auto-flow: column;
+    padding-left: 20px;
+    align-items: center;
+    gap: 30px;
+    justify-content: start;
+    margin-bottom: 5px;
+  }
+  
+  .left-menu__third__row {
+    grid-area: left-menu__third__row;
+    border-bottom: 1px solid grey;
+    display: grid;
+    padding: 30px;
+    gap: 10px;
+  }
+  .left-menu__third__row p {
+    font-size: 1.1rem;
+  }
+  .left-menu__form {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    color: royalblue;
+    font-family: sans-serif;
+    border: 2px solid royalblue;
+    padding: 10px;
+    margin-right: 120px;
+  }
+  .left-menu__fourth__row {
+    grid-area: left-menu__fourth__row;
+    display: grid;
+    padding: 20px;
+    gap: 10px;
+  }
+  .left-menu__fourth__row__music {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 20px;
+  }
+  
+  .main-menu {
+    grid-area: main-menu;
+    border-top: 1px solid #f0f0f0;
+    display: grid;
+    grid-template:
+      "main-menu__header" auto
+      "main-menu__main__part" 1fr;
+  }
+  .main-menu__header {
+    border-bottom: 1px solid #f0f0f0;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+    padding: 10px;
+  }
+  .main-menu__header button {
+    width: 100%;
+    padding: 5px 7px;
+    border-radius: 20px;
+    border: 1px solid grey;
+  }
+  .main-menu__header button:hover {
+    background-color: black;
+    color: white;
+  }
+  .main-menu__header button:focus {
+    background-color: black;
+    color: white;
+  }
