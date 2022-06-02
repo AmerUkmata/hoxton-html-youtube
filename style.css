@@ -11,16 +11,12 @@
       "left-menu  main-menu" 1fr /
       300px 1fr;
   }
-  /* Header */
+  /* HEADER */
   header {
     grid-area: header;
     padding: 10px;
     display: grid;
     grid-auto-flow: column;
-  }
-  .header-menu__logo a{
-      text-decoration: solid;
-      color: black;
   }
   .header-left__menu {
     display: grid;
@@ -29,6 +25,10 @@
     gap: 20px;
     align-items: center;
     padding-left: 10px;
+  }
+  .header-menu__logo a{
+    text-decoration: none;
+    color: black;
   }
   header .material-symbols-outlined {
     font-size: 28px;
@@ -62,6 +62,17 @@
     gap: 10px;
     align-items: center;
   }
+  .header-middle__menu a{
+    text-decoration: none;
+    color: #575757;
+  }
+  .header-mic{
+    padding: 5px;
+  }
+  .header-mic:hover{
+    background-color: gray;
+    clip-path: circle();
+  }
   .header-right__menu {
     display: grid;
     grid-auto-flow: column;
@@ -70,6 +81,13 @@
     align-items: center;
     padding-right: 10px;
   }
+  .header-form:hover{
+    background-color: #f9f9f9;
+  }
+  .header-right__menu a{
+    text-decoration: none;
+  }
+  
   .header-form {
     display: grid;
     grid-auto-flow: column;
@@ -83,7 +101,7 @@
   .fa-solid {
     font-size: 25px;
   }
-  /* Left Menu */
+  /* LEFT-MENU */
   .left-menu {
     grid-area: left-menu;
     display: grid;
@@ -172,16 +190,22 @@
   .left-menu__fourth__row {
     grid-area: left-menu__fourth__row;
     display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(auto);
     padding: 20px;
-    gap: 10px;
   }
-  .left-menu__fourth__row__music {
+  .left-menu__fourth__row h3{
+    color: grey;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+  }
+  .left-menu__fourth__row__items {
     display: grid;
     grid-auto-flow: column;
     justify-content: start;
     gap: 20px;
   }
-  /* Main Menu */
+  /* MAIN */
   .main-menu {
     grid-area: main-menu;
     border-top: 1px solid #f0f0f0;
@@ -190,7 +214,6 @@
       "main-menu__header" auto
       "main-menu__main__part" 1fr;
   }
-  /* Main Header */
   .main-menu__header {
     border-bottom: 1px solid #f0f0f0;
     display: grid;
@@ -200,7 +223,7 @@
   }
   .main-menu__header button {
     width: 100%;
-    padding: 5px 7px;
+    padding: 8px 10px;
     border-radius: 20px;
     border: 1px solid grey;
   }
@@ -212,13 +235,17 @@
     background-color: black;
     color: white;
   }
-  /* Menu */
+  /* MAIN-VIDEO */
   .main-menu__main__part{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     padding: 20px 50px;
     grid-gap: 20px;
     background-color: #f9f9f9;
+  }
+  .main-menu__main__part a{
+        text-decoration: solid;
+        color: black;
   }
   .main-menu__main__part__items{
     background-color: #f9f9f9;
