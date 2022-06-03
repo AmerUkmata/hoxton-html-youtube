@@ -9,7 +9,7 @@
     grid-template:
       "header    header" auto
       "left-menu  main-menu" 1fr /
-      300px 1fr;
+      900px 1fr;
   }
   /* HEADER */
   header {
@@ -100,4 +100,13 @@
   }
   .fa-solid {
     font-size: 25px;
+  }
+  .left-menu{
+      grid-area: left-menu;
+      background-color: #575757;
+      width: 125%;
+      height: 250%;
+  }
+  .left-menu .video{
+      
   }
